@@ -14,7 +14,7 @@ Instalar as dependências:
 
 Veja as instruções específicas de utilização para cada programa.
 
-## Download Images From URL List and Compress
+## 01. Download Images From URL List and Compress
 
 Faz download de imagens a partir de URLs e comprime.
 
@@ -41,7 +41,7 @@ Na linha de comandos correr o comando:
 
 O resultado irá para a pasta de destino.
 
-## Modify Image Names and Compress
+## 02. Modify Image Names and Compress
 
 Altera imagens a partir de uma pasta no computador.
 
