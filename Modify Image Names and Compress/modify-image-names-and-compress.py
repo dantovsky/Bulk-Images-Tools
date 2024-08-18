@@ -14,6 +14,7 @@ max_horizontal_width = 1400
 max_square_width = 1200
 max_vertical_width = 700
 compression_quality = 72 # Ajuste conforme necessário
+initial_photo_number = False # Deixar o valro = False se quiser que começe a partir do número 1
 
 # Garante que a pasta de destino exista
 if not os.path.exists(destination_folder):
@@ -80,7 +81,7 @@ for i, image_file in enumerate(image_files):
     image_extension = image_file.split(".")[-1]  
 
     # Modifica o nome do arquivo
-    new_file_name = f"{base_name} {i + 1}.{image_extension}"
+    new_file_name = f"{base_name} {initial_photo_number + i}.{image_extension}" if initial_photo_number != False else f"{base_name} {i + 1}.{image_extension}"
     new_file_path = os.path.join(destination_folder, new_file_name)
 
     # Comprime e redimensiona a imagem
